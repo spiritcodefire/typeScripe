@@ -1,0 +1,24 @@
+pour lancer la conversion de typescript en javascript, on lance la commmande
+-npx tsc 
+-npx tsc --watch
+
+const a: string = "Hello world"
+const n: number = 3
+const n: boolean = true
+const d: null = null
+const arr: array[] = ['aze' , 'aze']
+const user: {firstname: string, lastname: string} = {firstname = "John", lastname: "Doe"}
+const user: {firstname: string, lastname?: string} = {firstname = "John", lastname: "Doe"}          //  si on met un point d'interrogation, ca veut dire que la valeur est optionnel
+const user: {firstname: string, [key: string]: string } = {firstname = "John", lastname: "Doe"}     //  si on a un object donc on ne connait pas a l'avance les cles et les valeurs
+const cb: Function = (e: MouseEvent): void => (e: MouseEvent): number =>  { //  en precisant les deux point on precise le type de retour de notre fonction
+                                                // void veut dire que la fonction ne doit rien retourner
+
+}
+const cb: (e: MouseEvent): void => {  // dans le cadre d'un call back pur
+              return 3                                  
+
+}
+
+function printId(id: number | string): void { // ce type s'appel l'union, il permet de dire que le type attendu est soit de type number soit de type string
+    console.log( id.toString() )
+}

@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",  //  fichier ou sera extrait l'integralite de notre code
+        "target" : "ES2015", // donne la version de ES dans laquel on va compiler le code, permet d'avoir une version recente ou non en fonction du besoin 
+        "noEmitOnError": false, // permet de ne pas corriger mon erreur  dans le fichier compiler en cas de probleme
+        "strict": true
+    },
+    "files": [
+        "src/app.ts", // endroit ou l'on va chercher notre typescript
+    ]
+}
